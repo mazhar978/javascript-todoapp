@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyDJWEmqvG-eK7hCyGgRALrmpF-mTC5cPWo",
+          authDomain: "chat-app-66193.firebaseapp.com",
+          databaseURL: "https://chat-app-66193.firebaseio.com",
+          projectId: "chat-app-66193",
+          storageBucket: "chat-app-66193.appspot.com",
+          messagingSenderId: "839833173027",
+          appId: "1:839833173027:web:e32dd9c9cce82b77cf8596",
+          measurementId: "G-5C2WGYJ4VB"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+
+        </div>
+            <ol class="center" id="orderlist">
+
+            </ol>
+        <div class="end">
+            <i onclick="todoapp()" class="fa fa-plus-circle" aria-hidden="true"></i>
+            <input type="text" id="input" placeholder="addtodo">
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
